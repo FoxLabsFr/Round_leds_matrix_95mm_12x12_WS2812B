@@ -3,7 +3,7 @@
 Documentation and assets for the 95mm round LED matrix featuring 112 WS2812B-B/W LEDs arranged in a 6 LED radius pattern.
 [Product Page](https://www.tindie.com/products/foxlabs/round-leds-matrix-95mm-12x12-ws2812b-bw)
 
-![95mm Round LED Matrix](https://cdn.tindiemedia.com/images/resize/AvgMdUGv6NlKeBlEzq_zxY3CZus=/p/fit-in/653x435/filters:fill(fff)/i/192123/products/2021-12-18T23%3A27%3A47.665Z-LedRoundMatrix1.jpg?1639841278)
+![95mm Round LED Matrix](https://cdn.tindiemedia.com/images/resize/zlWR61EO005CF_6FM_MmS1ccvRE=/p/fit-in/653x435/filters:fill(fff)/i/192123/products/2024-10-07T11%3A18%3A36.022Z-IMG_20241007_130711-EDIT.jpg?1728274746)
 
 ## Specifications
 
@@ -15,14 +15,19 @@ Documentation and assets for the 95mm round LED matrix featuring 112 WS2812B-B/W
 - **Data Protocol:** Single-wire serial interface (WS2812 protocol)
 - **PCB Thickness:** 1.6mm
 - **Mounting Holes:** 8x 3mm diameter holes spaced evenly around the edge
-- **Connector Type:** 3-pin Molex SPOX connector for power and data
+- **Connector Type:** 3-pin JST HX connector for power and data (IN and OUT)
 
 ## Pin Configuration
 
-- **GND:** Ground
-- **5V:** Power supply (5V DC)
+### IN Connector
 - **IN:** Data input
+- **5V:** Power supply (5V DC)
+- **GND:** Ground
+
+### OUT Connector
 - **OUT:** Data output (for chaining multiple matrices)
+- **5V:** Power supply (5V DC)
+- **GND:** Ground
 
 ## LED Ordering
 For programming patterns and animations, refer to the diagram below to understand the LED ordering within the matrix.
@@ -93,7 +98,7 @@ void loop() {
 
 ## Important Considerations
 
-- **Power Supply:** Verify your power supply can support the total current required by the LEDs.
+- **Power Supply:** Verify that your power supply can support the total current required by the LEDs. The JST HX connectors are rated up to 3A. If you plan to use more (for example, setting the LEDs to full brightness), use the solder pads instead, with appropriately sized AWG wires.
 - **LED Protection:** WS2812B require protection against voltage spikes and excessive current. [Protection Module](https://www.tindie.com/products/27407/)
 - **Heat Dissipation:** Depending on your usage, active cooling may be necessary to prevent overheating.
 - **Data Integrity:** To prevent signal degradation, especially in long LED chains, keep data lines as short as possible.
