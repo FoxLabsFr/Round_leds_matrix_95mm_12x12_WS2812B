@@ -14,8 +14,8 @@ Documentation and assets for the 95mm round LED matrix featuring 112 WS2812B-B/W
 - **Current Consumption:** ~60mA per LED at full brightness (~6.72A total)
 - **Data Protocol:** Single-wire serial interface (WS2812 protocol)
 - **PCB Thickness:** 1.6mm
-- **Mounting Holes:** 8x 3mm diameter holes spaced evenly around the edge
-- **Connector Type:** 3-pin JST HX connector for power and data (IN and OUT)
+- **Mounting Holes:** 8x M3 screw holes evenly spaced around the edge
+- **Connector Type:** 3-pin JST HX connector OR soldering pads, for power and data (IN and OUT)
 
 ## Pin Configuration
 
@@ -32,7 +32,7 @@ Documentation and assets for the 95mm round LED matrix featuring 112 WS2812B-B/W
 ## LED Ordering
 For programming patterns and animations, refer to the diagram below to understand the LED ordering within the matrix.
 
-![95mm Round LED Matrix ID Diagram](./assets/led_id_order_diagram.jpg)
+![95mm Round LED Matrix ID Diagram](./assets/round_led_matrix_id_order_diagram.jpg)
 
 ## Conversion Matrix
 This matrix is useful for converting 2D images stored in a standard square format to the specific layout of the LED matrix. It maps each LED's position in the matrix to its corresponding image pixel. Entries with a value of `-1` indicate positions that do not correspond to an actual LED and should be ignored.
