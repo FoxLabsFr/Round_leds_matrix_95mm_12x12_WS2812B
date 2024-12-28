@@ -3,7 +3,7 @@
 Documentation and assets for the 95mm round LED matrix featuring 112 WS2812B-B/W LEDs arranged in a 6 LED radius pattern.
 [Product Page](https://www.tindie.com/products/foxlabs/round-leds-matrix-95mm-12x12-ws2812b-bw)
 
-![95mm Round LED Matrix](https://cdn.tindiemedia.com/images/resize/zlWR61EO005CF_6FM_MmS1ccvRE=/p/fit-in/653x435/filters:fill(fff)/i/192123/products/2024-10-07T11%3A18%3A36.022Z-IMG_20241007_130711-EDIT.jpg?1728274746)
+<img src="assets/round_leds_matrix_pic.jpg" alt="Round_leds_matrix" style="max-height: 400px;">
 
 ## Specifications
 
@@ -32,7 +32,7 @@ Documentation and assets for the 95mm round LED matrix featuring 112 WS2812B-B/W
 ## LED Ordering
 For programming patterns and animations, refer to the diagram below to understand the LED ordering within the matrix.
 
-![95mm Round LED Matrix ID Diagram](./assets/round_led_matrix_id_order_diagram.jpg)
+<img src="assets/round_led_matrix_id_order_diagram.jpg" alt="Hexagonal_leds_matrix_ID_Diagram" style="max-height: 400px;">
 
 ## Conversion Matrix
 This matrix is useful for converting 2D images stored in a standard square format to the specific layout of the LED matrix. It maps each LED's position in the matrix to its corresponding image pixel. Entries with a value of `-1` indicate positions that do not correspond to an actual LED and should be ignored.
